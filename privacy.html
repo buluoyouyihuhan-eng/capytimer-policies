@@ -1,223 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Capy Timer</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1b2a;
+            color: #e8e8e8;
+            line-height: 1.7;
             padding: 20px;
-            max-width: 800px;
+        }
+
+        .container {
+            max-width: 780px;
             margin: 0 auto;
-            background-color: #1a1a2e;
-            color: #e0e0e0;
+            padding: 40px 24px;
         }
-        h1 {
-            color: #FFD54F;
-            font-size: 28px;
-            margin-bottom: 10px;
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
         }
+
+        .header h1 {
+            font-size: 2rem;
+            color: #f5c842;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #aaa;
+            font-size: 0.95rem;
+        }
+
         h2 {
-            color: #FFF8E1;
-            font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #444;
+            color: #f5c842;
+            font-size: 1.2rem;
+            margin: 32px 0 12px;
+            border-bottom: 1px solid #2a3a4a;
             padding-bottom: 8px;
         }
+
         h3 {
-            color: #FFE082;
-            font-size: 16px;
-            margin-top: 20px;
+            color: #d4a929;
+            font-size: 1rem;
+            margin: 20px 0 8px;
+        }
+
+        p,
+        li {
+            color: #ccc;
+            font-size: 0.95rem;
             margin-bottom: 10px;
         }
-        p {
+
+        ul,
+        ol {
+            padding-left: 24px;
             margin-bottom: 12px;
-            color: #e0e0e0;
         }
-        ul, ol {
-            margin-bottom: 15px;
-            padding-left: 25px;
-        }
+
         li {
-            margin-bottom: 8px;
-            color: #e0e0e0;
+            margin-bottom: 6px;
         }
+
         a {
-            color: #FFD54F;
+            color: #f5c842;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
-        .last-updated {
-            color: #999;
-            font-size: 14px;
-            margin-bottom: 30px;
+
+        .highlight-box {
+            background: rgba(245, 200, 66, 0.08);
+            border: 1px solid rgba(245, 200, 66, 0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 16px 0;
         }
-        .highlight {
-            background-color: rgba(255, 213, 79, 0.1);
-            padding: 15px;
-            border-left: 3px solid #FFD54F;
-            margin: 20px 0;
+
+        .highlight-box p {
+            color: #e8e8e8;
+            margin: 0;
         }
-        strong {
-            color: #FFE082;
+
+        .back-link {
+            display: inline-block;
+            color: #f5c842;
+            margin-bottom: 24px;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #2a3a4a;
+            color: #666;
+            font-size: 0.85rem;
         }
     </style>
 </head>
+
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="last-updated"><strong>Effective Date:</strong> February 5, 2026<br>
-    <strong>Last Updated:</strong> February 5, 2026</p>
+    <div class="container">
+        <a class="back-link" href="index.html">← Back</a>
 
-    <p>Welcome to <strong>Capy Timer</strong> ("we," "our," or "us"). We are committed to protecting your privacy and being transparent about our data practices. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+        <div class="header">
+            <h1>🐾 Privacy Policy</h1>
+            <p>Capy Timer &nbsp;·&nbsp; Last Updated: February 22, 2026</p>
+        </div>
 
-    <div class="highlight">
-        <strong>TL;DR:</strong> We don't collect or store any personal data from free users. Pro users' preferences are stored locally on your device only. We use Firebase Storage solely to deliver audio files—no personal data is sent to our servers.
+        <div class="highlight-box">
+            <p><strong>Summary:</strong> Capy Timer is a fully offline app. We do not collect personal data, we do not
+                use any analytics or advertising SDKs, and we do not connect to any server. Everything stays on your
+                device.</p>
+        </div>
+
+        <h2>1. Information We Collect</h2>
+
+        <h3>1.1 Data We Do NOT Collect</h3>
+        <p>Capy Timer does not collect, store, or transmit:</p>
+        <ul>
+            <li>Your name, email address, or any account information</li>
+            <li>Device identifiers (IMEI, MAC address, advertising ID)</li>
+            <li>Location data (GPS, IP-based, or approximate)</li>
+            <li>Usage analytics, crash reports, or telemetry</li>
+            <li>Browsing history or app usage data</li>
+            <li>Cookies or cross-app tracking data</li>
+            <li>Health or biometric data</li>
+        </ul>
+
+        <h3>1.2 Data Stored Locally on Your Device</h3>
+        <p>The following preferences are saved only on your device using Android SharedPreferences (Android) or iOS
+            UserDefaults (iOS):</p>
+        <ul>
+            <li>Timer duration preference (e.g., 30 minutes)</li>
+            <li>Selected sleep sound</li>
+            <li>Selected "Then" action (app to launch or sound to play)</li>
+            <li>Pro purchase status (a local boolean flag)</li>
+            <li>App launch count (for onboarding display logic)</li>
+        </ul>
+        <p>This data <strong>never leaves your device</strong> and is not accessible to us or any third party.</p>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>Because we collect no personal data, there is nothing to use beyond delivering the app experience. Locally
+            stored preferences are used solely to remember your settings between sessions.</p>
+
+        <h2>3. Data Storage and Security</h2>
+
+        <h3>3.1 Local-Only Storage</h3>
+        <p>All data is stored exclusively on your device:</p>
+        <ul>
+            <li><strong>Android:</strong> SharedPreferences, protected by Android OS-level sandboxing</li>
+            <li><strong>iOS:</strong> UserDefaults, protected by iOS app sandbox</li>
+        </ul>
+        <p>We operate <strong>no servers, no databases, and no cloud infrastructure</strong> for user data storage.</p>
+
+        <h3>3.2 Audio and Animation Assets</h3>
+        <p>All audio files (sleep sounds) and animations (capybara graphics) are <strong>bundled directly within the app
+                package</strong>. No network request is made to stream or download content after installation.</p>
+
+        <h2>4. Third-Party Services</h2>
+
+        <h3>4.1 Payment Processing</h3>
+        <p>In-app purchases (Pro version) are processed entirely by the platform's store:</p>
+        <ul>
+            <li><strong>Google Play Store (Android):</strong> <a href="https://policies.google.com/privacy"
+                    target="_blank">Google's Privacy Policy</a></li>
+            <li><strong>Apple App Store (iOS):</strong> <a href="https://www.apple.com/legal/privacy/"
+                    target="_blank">Apple's Privacy Policy</a></li>
+        </ul>
+        <p>We do not receive, store, or process any payment card or billing information. All transactions are handled
+            exclusively by Google and Apple.</p>
+
+        <h3>4.2 No Other Third-Party Services</h3>
+        <p>Capy Timer does not use or integrate:</p>
+        <ul>
+            <li>Analytics platforms (Firebase, Mixpanel, Amplitude, etc.)</li>
+            <li>Advertising SDKs (AdMob, Facebook Ads, etc.)</li>
+            <li>Crash reporting tools (Crashlytics, Sentry, etc.)</li>
+            <li>Social login or social SDKs</li>
+            <li>Any other third-party data processor</li>
+        </ul>
+
+        <h2>5. Permissions</h2>
+        <p>Capy Timer requests the following system permissions:</p>
+
+        <h3>5.1 Android Permissions</h3>
+        <ul>
+            <li><strong>SYSTEM_ALERT_WINDOW (Draw over other apps):</strong> Required to display the floating capybara
+                overlay during focus sessions. No data is collected through this permission.</li>
+            <li><strong>FOREGROUND_SERVICE / FOREGROUND_SERVICE_MEDIA_PLAYBACK:</strong> Required to keep the overlay
+                and sleep sound active when the app is in the background.</li>
+            <li><strong>POST_NOTIFICATIONS:</strong> Used to show a status notification while the focus timer is
+                running. No notification content is transmitted off-device.</li>
+            <li><strong>VIBRATE:</strong> Used for haptic feedback at milestone moments. No data collected.</li>
+            <li><strong>RECEIVE_BOOT_COMPLETED:</strong> Not currently used (reserved for future auto-start feature).
+            </li>
+        </ul>
+
+        <h3>5.2 iOS Permissions</h3>
+        <ul>
+            <li><strong>Live Activities (Dynamic Island / Lock Screen):</strong> Used to display the capybara timer on
+                the Dynamic Island and lock screen. No data leaves the device.</li>
+        </ul>
+
+        <h2>6. Data Sharing and Disclosure</h2>
+        <p>We do not share your data with any third party. There is no data to share. We will never sell your
+            information.</p>
+        <p>We may disclose information only if required by law (e.g., valid legal process), but as we hold no user data,
+            this is practically impossible.</p>
+
+        <h2>7. Your Rights and Choices</h2>
+
+        <h3>7.1 Data Deletion</h3>
+        <p>To delete all app data, simply uninstall Capy Timer from your device. All locally stored preferences will be
+            permanently removed. No data exists anywhere else to delete.</p>
+
+        <h3>7.2 Access to Your Data</h3>
+        <p>You can review all stored preferences at any time via your device's app settings. On Android: <em>Settings →
+                Apps → Capy Timer → Clear data</em>. On iOS: uninstalling the app removes all data.</p>
+
+        <h3>7.3 No Opt-Out Needed</h3>
+        <p>Because we do not collect any personal data or use tracking, there is nothing to opt out of.</p>
+
+        <h2>8. Children's Privacy (COPPA &amp; Equivalent)</h2>
+        <p>Capy Timer is rated for users of all ages (general audience). We do not knowingly collect personal
+            information from children under 13 (or the applicable age in your jurisdiction). Because no personal
+            information is collected from any user, this is inherently satisfied.</p>
+        <p>Parents or guardians with concerns may contact us at <a
+                href="mailto:capytimer.help@outlook.com">capytimer.help@outlook.com</a>.</p>
+
+        <h2>9. California Privacy Rights (CCPA)</h2>
+        <p>California residents have the right to know what personal information is collected, used, shared, or sold.
+            Because Capy Timer collects <strong>no personal information</strong>, we do not sell any personal data and
+            the rights to access, delete, and opt-out of sale are automatically satisfied.</p>
+        <p>To submit a verifiable consumer request, contact: <a
+                href="mailto:capytimer.help@outlook.com">capytimer.help@outlook.com</a>.</p>
+
+        <h2>10. European Privacy Rights (GDPR)</h2>
+        <p>Capy Timer does not process personal data of EU/EEA residents. As no personal data is collected, there is no
+            legal basis required for processing, and no Data Protection Officer is required.</p>
+        <p>EU residents retain all rights under GDPR including access, rectification, erasure, restriction, portability,
+            and objection. As we hold no data, these rights are inherently fulfilled.</p>
+        <p>We do not transfer personal data to third countries because we do not transfer personal data at all.</p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy when the app's features change. Significant changes will be reflected by
+            updating the "Last Updated" date above. Continued use of the app after changes constitutes acceptance of the
+            updated policy.</p>
+        <p>We encourage you to review this policy periodically.</p>
+
+        <h2>12. Contact Us</h2>
+        <p>For any privacy-related questions, data requests, or concerns:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:capytimer.help@outlook.com">capytimer.help@outlook.com</a></li>
+            <li><strong>App Name:</strong> Capy Timer</li>
+            <li><strong>Response time:</strong> We aim to respond within 5 business days.</li>
+        </ul>
+
+        <div class="footer">
+            <p>© 2026 Capy Timer. All rights reserved.</p>
+            <p style="margin-top: 8px;"><a href="index.html">Home</a> &nbsp;·&nbsp; <a href="terms.html">Terms of
+                    Service</a></p>
+        </div>
     </div>
-
-    <h2>1. Information We Collect</h2>
-
-    <h3>1.1 Free Users</h3>
-    <p>If you use the free version of Capy Timer, <strong>we do not collect, store, or transmit any personal information</strong>. All app functionality operates entirely on your device.</p>
-
-    <h3>1.2 Pro Users (Lifetime Purchase)</h3>
-    <p>When you purchase the Pro version ($2.99 one-time payment), we store the following information <strong>locally on your device only</strong>:</p>
-    <ul>
-        <li><strong>Sound Preferences:</strong> Your last selected sleep sound</li>
-        <li><strong>Timer Settings:</strong> Your preferred sleep timer duration</li>
-        <li><strong>"Then" Action:</strong> Your selected post-sleep action (app to launch or sound to play)</li>
-        <li><strong>Pro Purchase Status:</strong> A flag indicating you have purchased Pro features</li>
-    </ul>
-    <p><strong>Important:</strong> This data never leaves your device. It is stored using Android SharedPreferences or iOS UserDefaults and is not transmitted to any server.</p>
-
-    <h3>1.3 Automatically Collected Information</h3>
-    <p>We do <strong>not</strong> collect:</p>
-    <ul>
-        <li>Device identifiers (IMEI, MAC address, etc.)</li>
-        <li>Location data</li>
-        <li>Usage analytics or crash reports</li>
-        <li>Advertising IDs</li>
-        <li>Cookies or tracking technologies</li>
-    </ul>
-
-    <h2>2. How We Use Your Information</h2>
-    <p>The locally stored preferences (Pro users only) are used solely to:</p>
-    <ul>
-        <li>Remember your last settings when you reopen the app</li>
-        <li>Provide a personalized sleep experience</li>
-        <li>Restore your Pro status if you reinstall the app (via Apple/Google purchase verification)</li>
-    </ul>
-
-    <h2>3. Data Storage and Security</h2>
-
-    <h3>3.1 Local Storage</h3>
-    <p>All user data is stored locally on your device using:</p>
-    <ul>
-        <li><strong>Android:</strong> SharedPreferences (encrypted at the OS level)</li>
-        <li><strong>iOS:</strong> UserDefaults (secured by iOS Keychain when applicable)</li>
-    </ul>
-
-    <h3>3.2 Firebase Storage</h3>
-    <p>We use <strong>Firebase Storage</strong> (a Google Cloud service) to host and deliver premium audio files to Pro users. When you stream or download a Pro audio file:</p>
-    <ul>
-        <li>Your device connects directly to Firebase Storage</li>
-        <li><strong>No personal data</strong> is sent to Firebase (no user ID, email, or device info)</li>
-        <li>Firebase may log anonymous technical data (IP address, timestamp) as per <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase's Privacy Policy</a></li>
-    </ul>
-
-    <h3>3.3 Security Measures</h3>
-    <p>We implement industry-standard security practices:</p>
-    <ul>
-        <li>All data is stored locally with OS-level encryption</li>
-        <li>Audio files are served over HTTPS</li>
-        <li>We do not maintain any user databases or servers</li>
-    </ul>
-
-    <h2>4. Third-Party Services</h2>
-    <p>We use the following third-party services:</p>
-
-    <h3>4.1 Payment Processing</h3>
-    <ul>
-        <li><strong>Apple App Store (iOS):</strong> Processes in-app purchases. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a></li>
-        <li><strong>Google Play Store (Android):</strong> Processes in-app purchases. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a></li>
-    </ul>
-    <p>We do not receive or store your payment information. All transactions are handled by Apple/Google.</p>
-
-    <h3>4.2 Firebase Storage</h3>
-    <p>Used solely for audio file distribution. See <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a>.</p>
-
-    <h2>5. Data Sharing and Disclosure</h2>
-    <p><strong>We do not sell, rent, or share your data with third parties.</strong></p>
-    <p>We may disclose information only if required by law (e.g., court order, subpoena) or to protect our legal rights.</p>
-
-    <h2>6. Your Rights and Choices</h2>
-
-    <h3>6.1 Access and Deletion</h3>
-    <p>You have the right to:</p>
-    <ul>
-        <li><strong>Access:</strong> All your data is stored locally on your device and accessible to you at any time</li>
-        <li><strong>Delete:</strong> Use the "Delete My Data" option in Settings to clear all local preferences</li>
-        <li><strong>Uninstall:</strong> Deleting the app removes all local data permanently</li>
-    </ul>
-
-    <h3>6.2 Opt-Out</h3>
-    <p>Since we don't collect analytics or tracking data, there is nothing to opt out of.</p>
-
-    <h3>6.3 Data Portability</h3>
-    <p>Your preferences are stored in a standard format on your device. You can export them using device backup tools (iCloud, Google Drive).</p>
-
-    <h2>7. Children's Privacy (COPPA Compliance)</h2>
-    <p>Capy Timer does not knowingly collect personal information from children under 13. Our app:</p>
-    <ul>
-        <li>Does not require account creation</li>
-        <li>Does not collect personal data from any users</li>
-        <li>Does not contain third-party advertising</li>
-        <li>Does not enable communication with other users</li>
-    </ul>
-    <p>If you believe a child has provided us with personal information, please contact us at <a href="mailto:capytimer.help@outlook.com">capytimer.help@outlook.com</a>.</p>
-
-    <h2>8. International Data Transfers</h2>
-    <p>Since all data is stored locally on your device, there are no international data transfers. Firebase Storage servers may be located in various regions, but no personal data is transmitted.</p>
-
-    <h2>9. California Privacy Rights (CCPA)</h2>
-    <p>If you are a California resident, you have the right to:</p>
-    <ul>
-        <li>Know what personal information is collected (none, except local preferences for Pro users)</li>
-        <li>Request deletion of your data (use "Delete My Data" in Settings)</li>
-        <li>Opt-out of data sales (we don't sell data)</li>
-    </ul>
-
-    <h2>10. European Privacy Rights (GDPR)</h2>
-    <p>If you are in the European Economic Area (EEA), you have the right to:</p>
-    <ul>
-        <li>Access your data (stored locally on your device)</li>
-        <li>Rectify inaccurate data (edit in Settings)</li>
-        <li>Erase your data (use "Delete My Data")</li>
-        <li>Restrict processing (uninstall the app)</li>
-        <li>Data portability (export via device backup)</li>
-        <li>Object to processing (we don't process personal data)</li>
-    </ul>
-    <p>To exercise these rights, contact us at <a href="mailto:capytimer.help@outlook.com">capytimer.help@outlook.com</a>.</p>
-
-    <h2>11. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Changes will be posted in the app with an updated "Last Updated" date. Continued use of the app after changes constitutes acceptance of the new policy.</p>
-
-    <h2>12. Contact Us</h2>
-    <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
-    <ul>
-        <li><strong>Email:</strong> <a href="mailto:capytimer.help@outlook.com">capytimer.help@outlook.com</a></li>
-        <li><strong>App Name:</strong> Capy Timer</li>
-        <li><strong>Developer:</strong> Capy Timer Team</li>
-    </ul>
-
-    <hr style="margin: 40px 0; border: none; border-top: 1px solid #444;">
-
-    <p style="font-size: 12px; color: #999; text-align: center;">
-        This Privacy Policy is effective as of February 5, 2026. By using Capy Timer, you agree to this Privacy Policy.
-    </p>
 </body>
+
 </html>
